@@ -1,0 +1,25 @@
+From b4400c86b7481cd8ffd6d1ae4dc62d0be29e1e30 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Ond=C5=99ej=20Lyson=C4=9Bk?= <olysonek@redhat.com>
+Date: Fri, 9 Mar 2018 14:13:47 +0100
+Subject: [PATCH] Make espeak-ng the default output module
+
+---
+ config/speechd.conf | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/config/speechd.conf b/config/speechd.conf
+index 140de3a..f99e3ce 100644
+--- a/config/speechd.conf
++++ b/config/speechd.conf
+@@ -240,7 +240,7 @@ DefaultVolume 100
+ # The DefaultModule selects which output module is the default.  You
+ # must use one of the names of the modules loaded with AddModule.
+ 
+-DefaultModule espeak
++DefaultModule espeak-ng
+ 
+ # The LanguageDefaultModule selects which output modules are prefered
+ # for specified languages.
+-- 
+2.14.3
+
